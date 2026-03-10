@@ -11,12 +11,19 @@ public class Agent extends Element {
 		setPosition(position);
 	}
 	
+	// TODO ensure that method terminates
 	public Position decide() {
 		Random rand = new Random();
-		Position res = new Position(rand.nextInt(-1, 2), rand.nextInt(-1, 2));
-		res.setX(res.getX() + position.getX());
-		res.setY(res.getY() + position.getY());
+		Position res = new Position(0, 0);
+		do {
+			res.setX(rand.nextInt(-1, 2) + position.getX());
+			res.setY(rand.nextInt(-1, 2) + position.getY());
+		} while (!grid.isValidPosition(res));
 		return res;
+	}
+	
+	public void move() {
+		setPosition(decide());
 	}
 
 	public String getSymbol() {

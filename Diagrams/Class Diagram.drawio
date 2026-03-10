@@ -53,7 +53,7 @@
           <mxGeometry height="40" width="280" y="292" as="geometry" />
         </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-10" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="Agent" vertex="1">
-          <mxGeometry height="112" width="160" x="640" y="320" as="geometry" />
+          <mxGeometry height="138" width="160" x="640" y="320" as="geometry" />
         </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-11" parent="zdv4mIC38M9_iGeSVuiS-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="- position: Position" vertex="1">
           <mxGeometry height="26" width="160" y="26" as="geometry" />
@@ -64,8 +64,11 @@
         <mxCell id="zdv4mIC38M9_iGeSVuiS-13" parent="zdv4mIC38M9_iGeSVuiS-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ decide(): Position" vertex="1">
           <mxGeometry height="26" width="160" y="60" as="geometry" />
         </mxCell>
-        <mxCell id="zdv4mIC38M9_iGeSVuiS-57" parent="zdv4mIC38M9_iGeSVuiS-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getSymbol(): String" vertex="1">
+        <mxCell id="PK6ou6Udm7Bx7WdPwYPC-2" parent="zdv4mIC38M9_iGeSVuiS-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ move()" vertex="1">
           <mxGeometry height="26" width="160" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="zdv4mIC38M9_iGeSVuiS-57" parent="zdv4mIC38M9_iGeSVuiS-10" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ getSymbol(): String" vertex="1">
+          <mxGeometry height="26" width="160" y="112" as="geometry" />
         </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-16" edge="1" parent="1" source="zdv4mIC38M9_iGeSVuiS-2" style="endArrow=open;html=1;rounded=0;endFill=0;" target="zdv4mIC38M9_iGeSVuiS-6" value="">
           <mxGeometry relative="1" as="geometry">
