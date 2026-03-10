@@ -18,7 +18,7 @@ public class Agent extends Element {
 		do {
 			res.setX(rand.nextInt(-1, 2) + position.getX());
 			res.setY(rand.nextInt(-1, 2) + position.getY());
-		} while (!grid.isValidPosition(res));
+		} while (!grid.isFree(res));
 		return res;
 	}
 	

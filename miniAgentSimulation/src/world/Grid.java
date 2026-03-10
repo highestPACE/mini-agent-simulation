@@ -59,6 +59,9 @@ public class Grid {
 	}
 	
 	public boolean isFree(Position position) {
+		if (!isValidPosition(position)) {
+			return false;
+		}
 		return getElement(position) instanceof Empty;
 	}
 	
