@@ -56,6 +56,15 @@ public class Grid {
 		return getElement(position) instanceof Empty;
 	}
 	
+	public boolean isValidPosition(Position position) {
+		if (position.getX() < 0 || width <= position.getX()) {
+			return false;
+		} else if (position.getY() < 0 || height <= position.getY()) {
+			return false;
+		}
+		return true;
+	}
+	
 	public Element getElement(Position position) {
 		return grid[position.getY()][position.getX()];
 	}
