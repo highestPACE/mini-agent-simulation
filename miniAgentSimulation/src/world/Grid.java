@@ -36,7 +36,7 @@ public class Grid {
 				continue;
 			}
 			if (a < agentsCount) {
-				setElement(pos, new Agent(pos));
+				new Agent(this, pos);
 				++a;
 			} else {
 				setElement(pos, new Obstacle());
@@ -53,6 +53,7 @@ public class Grid {
 		return grid[position.getY()][position.getX()];
 	}
 	
+	// TODO remove setElement, Elements locate themselves
 	public void setElement(Position position, Element element) {
 		grid[position.getY()][position.getX()] = element;
 	}

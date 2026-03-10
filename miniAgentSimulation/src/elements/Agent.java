@@ -3,13 +3,15 @@ import world.*;
 import java.util.Random;
 
 public class Agent extends Element {
+	private final Grid grid;
 	private Position position;
 	
-	public Agent(Position position) {
+	public Agent(Grid grid, Position position) {
+		this.grid = grid;
 		setPosition(position);
 	}
 	
-	public Position decide(World world) {
+	public Position decide() {
 		Random rand = new Random();
 		Position res = new Position(rand.nextInt(-1, 2), rand.nextInt(-1, 2));
 		res.setX(res.getX() + position.getX());
@@ -26,6 +28,8 @@ public class Agent extends Element {
 	}
 
 	public void setPosition(Position position) {
+		grid.setElement(this.position, new Empty());
 		this.position = position;
+		grid.setElement(this.position, this);
 	}
 }
