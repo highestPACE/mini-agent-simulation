@@ -2,16 +2,10 @@ package renderer;
 import world.*;
 
 public class ConsoleRenderer {
-	private World world;
 	
-	public ConsoleRenderer(World world) {
-		setWorld(world);
-	}
-	
-	public void render() {
+	public void render(Grid grid) {
 		String res = "";
 		
-		Grid grid = world.getGrid();
 		int height = grid.getHeight();
 		int width = grid.getWidth();
 		
@@ -25,13 +19,5 @@ public class ConsoleRenderer {
 		}
 		
 		System.out.println(res);
-	}
-
-	public World getWorld() {
-		return world;
-	}
-
-	public void setWorld(World world) {
-		this.world = world;
 	}
 }
