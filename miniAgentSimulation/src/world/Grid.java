@@ -30,6 +30,12 @@ public class Grid {
 		agents.add(agent);
 	}
 	
+	public void updateAgents() {
+		for (Agent a : agents) {
+			a.move();
+		}
+	}
+	
 	// TODO List of free positions to ensure that this method terminates 
 	public void setRandom(int agentsCount, int obstaclesCount) {
 		Random rand = new Random();
