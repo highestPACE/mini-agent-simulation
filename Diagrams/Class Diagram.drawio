@@ -5,7 +5,7 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="zdv4mIC38M9_iGeSVuiS-2" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="World" vertex="1">
-          <mxGeometry height="86" width="160" x="40" y="163" as="geometry" />
+          <mxGeometry height="86" width="160" x="40" y="176" as="geometry" />
         </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-4" parent="zdv4mIC38M9_iGeSVuiS-2" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="160" y="26" as="geometry" />
@@ -87,23 +87,8 @@
             <mxPoint y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zdv4mIC38M9_iGeSVuiS-23" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="java.lang.Thread" vertex="1">
-          <mxGeometry height="60" width="160" x="40" y="40" as="geometry" />
-        </mxCell>
-        <mxCell id="zdv4mIC38M9_iGeSVuiS-25" parent="zdv4mIC38M9_iGeSVuiS-23" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
-          <mxGeometry height="8" width="160" y="26" as="geometry" />
-        </mxCell>
-        <mxCell id="zdv4mIC38M9_iGeSVuiS-29" parent="zdv4mIC38M9_iGeSVuiS-23" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="+ run()" vertex="1">
-          <mxGeometry height="26" width="160" y="34" as="geometry" />
-        </mxCell>
-        <mxCell id="zdv4mIC38M9_iGeSVuiS-27" edge="1" parent="1" source="zdv4mIC38M9_iGeSVuiS-2" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;" target="zdv4mIC38M9_iGeSVuiS-23" value="">
-          <mxGeometry relative="1" width="160" as="geometry">
-            <mxPoint x="290" y="330" as="sourcePoint" />
-            <mxPoint x="450" y="330" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-35" parent="1" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="&lt;span style=&quot;font-weight: normal;&quot;&gt;{abstract}&lt;/span&gt;&lt;br&gt;Element" vertex="1">
-          <mxGeometry height="74" width="160" x="640" y="169" as="geometry" />
+          <mxGeometry height="74" width="160" x="640" y="182" as="geometry" />
         </mxCell>
         <mxCell id="zdv4mIC38M9_iGeSVuiS-36" parent="zdv4mIC38M9_iGeSVuiS-35" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
           <mxGeometry height="8" width="160" y="40" as="geometry" />

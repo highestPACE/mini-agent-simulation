@@ -1,20 +1,25 @@
 package world;
 import renderer.*;
 
-public class World extends Thread {
+public class World {
 	private Grid grid;
+	private boolean run = false;
 	
 	public World(int height, int width) {
 		setGrid(new Grid(height, width));
 	}
 	
-	@Override
 	public void run() {
+		run = true;
 		ConsoleRenderer renderer = new ConsoleRenderer();
-		while (!isInterrupted()) {
+		while (run) {
 			update();
 			renderer.render(grid);
 		}
+	}
+	
+	public void stop() {
+		run = false;
 	}
 	
 	public void update() {

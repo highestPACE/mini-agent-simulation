@@ -15,8 +15,7 @@ public class Main {
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-			world.interrupt();
 		}
-		world.interrupt();
+		world.stop();
 	}
 }
