@@ -52,7 +52,7 @@ public class Grid {
 				addAgent(pos);
 				++a;
 			} else {
-				setElement(pos, new Obstacle());
+				new Obstacle(this, pos);
 				++o;
 			}
 		}
