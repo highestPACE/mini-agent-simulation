@@ -49,19 +49,19 @@ public class Grid {
 		return getElement(position) instanceof Empty;
 	}
 	
-	public int getHeight() {
-		return height;
-	}
-	
-	public int getWidth() {
-		return width;
-	}
-	
 	public Element getElement(Position position) {
 		return grid[position.getY()][position.getX()];
 	}
 	
 	public void setElement(Position position, Element element) {
 		grid[position.getY()][position.getX()] = element;
+	}
+	
+	public int getHeight() {
+		return height;
+	}
+	
+	public int getWidth() {
+		return width;
 	}
 }
