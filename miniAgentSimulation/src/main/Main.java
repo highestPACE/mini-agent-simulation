@@ -10,7 +10,7 @@ public class Main {
 		World world = new World(height, width);
 		world.setRandom(1, 5);
 		
-		System.out.println("Start simulation");
+		System.out.println("Simulation started");
 		ConsoleRenderer renderer = new ConsoleRenderer();
 		renderer.render(world.getGrid());
 		
