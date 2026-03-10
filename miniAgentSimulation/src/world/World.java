@@ -7,6 +7,10 @@ public class World {
 		setGrid(new Grid(height, width));
 	}
 	
+	public void setRandom(int agentsCount, int obstaclesCount) {
+		grid.setRandom(agentsCount, obstaclesCount);
+	}
+	
 	public Grid getGrid() {
 		return grid;
 	}

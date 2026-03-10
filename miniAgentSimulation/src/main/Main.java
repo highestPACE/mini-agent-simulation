@@ -8,6 +8,7 @@ public class Main {
 		int height = 10;
 		int width = 10;
 		World world = new World(height, width);
+		world.setRandom(5, 5);
 		
 		ConsoleRenderer renderer = new ConsoleRenderer(world);
 		
