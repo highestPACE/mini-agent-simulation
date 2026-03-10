@@ -36,7 +36,7 @@ public class Grid {
 				continue;
 			}
 			if (a < agentsCount) {
-				setElement(pos, new Agent());
+				setElement(pos, new Agent(pos));
 				++a;
 			} else {
 				setElement(pos, new Obstacle());
@@ -45,8 +45,8 @@ public class Grid {
 		}
 	}
 	
-	public boolean isFree(Position pos) {
-		return getElement(pos) instanceof Empty;
+	public boolean isFree(Position position) {
+		return getElement(position) instanceof Empty;
 	}
 	
 	public int getHeight() {
@@ -57,11 +57,11 @@ public class Grid {
 		return width;
 	}
 	
-	public Element getElement(Position pos) {
-		return grid[pos.getY()][pos.getX()];
+	public Element getElement(Position position) {
+		return grid[position.getY()][position.getX()];
 	}
 	
-	public void setElement(Position pos, Element element) {
-		grid[pos.getY()][pos.getX()] = element;
+	public void setElement(Position position, Element element) {
+		grid[position.getY()][position.getX()] = element;
 	}
 }
