@@ -36,18 +36,12 @@ public class Grid {
 		}
 	}
 	
-	// TODO List of free positions to ensure that this method terminates 
 	public void setRandom(int agentsCount, int obstaclesCount) {
 		Random rand = new Random();
 		int a = 0;
 		int o = 0;
 		while (a < agentsCount || o < obstaclesCount) {
-			int y = rand.nextInt(getHeight());
-			int x = rand.nextInt(getWidth());
-			Position pos = new Position(x, y);
-			if (!isFree(pos)) {
-				continue;
-			}
+			Position pos = getFreePosition();
 			if (a < agentsCount) {
 				addAgent(pos);
 				++a;
@@ -56,6 +50,17 @@ public class Grid {
 				++o;
 			}
 		}
+	}
+	
+	// TODO Ensure method terminates
+	public Position getFreePosition() {
+		Random rand = new Random();
+		Position res = new Position(rand.nextInt(getWidth()), rand.nextInt(getHeight()));
+		while (!isFree(res)) {
+			res.setY(rand.nextInt(getHeight()));
+			res.setX(rand.nextInt(getWidth()));
+		}
+		return res;
 	}
 	
 	public boolean isFree(Position position) {
