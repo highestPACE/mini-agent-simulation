@@ -5,10 +5,10 @@ import renderer.*;
 public class Main {
 
 	public static void main(String[] args) {
-		int height = 5;
-		int width = 5;
+		int height = 2;
+		int width = 2;
 		World world = new World(height, width);
-		world.setRandom(1, 5);
+		world.setRandom(1, 1);
 		
 		System.out.println("Simulation started");
 		ConsoleRenderer renderer = new ConsoleRenderer();
