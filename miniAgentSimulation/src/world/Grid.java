@@ -25,6 +25,11 @@ public class Grid {
 		}
 	}
 	
+	private void addAgent(Position position) {
+		Agent agent = new Agent(this, position);
+		agents.add(agent);
+	}
+	
 	// TODO List of free positions to ensure that this method terminates 
 	public void setRandom(int agentsCount, int obstaclesCount) {
 		Random rand = new Random();
@@ -38,8 +43,7 @@ public class Grid {
 				continue;
 			}
 			if (a < agentsCount) {
-				Agent agent = new Agent(this, pos);
-				agents.add(agent);
+				addAgent(pos);
 				++a;
 			} else {
 				setElement(pos, new Obstacle());
