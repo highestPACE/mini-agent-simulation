@@ -8,8 +8,15 @@ public class Main {
 		int height = 10;
 		int width = 10;
 		World world = new World(height, width);
-		world.setRandom(5, 5);
-
-		new ConsoleRenderer().render(world.getGrid());
+		world.setRandom(1, 5);
+		world.run();
+		try {
+			Thread.sleep(5000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			world.interrupt();
+		}
+		world.interrupt();
 	}
 }
