@@ -1,4 +1,5 @@
 package world;
+import renderer.*;
 
 public class World extends Thread {
 	private Grid grid;
@@ -9,21 +10,19 @@ public class World extends Thread {
 	
 	@Override
 	public void run() {
+		ConsoleRenderer renderer = new ConsoleRenderer();
 		while (!isInterrupted()) {
 			update();
+			renderer.render(grid);
 		}
 	}
 	
 	public void update() {
-		getGrid().updateAgents();
+		grid.updateAgents();
 	}
 	
 	public void setRandom(int agentsCount, int obstaclesCount) {
 		grid.setRandom(agentsCount, obstaclesCount);
-	}
-	
-	public Grid getGrid() {
-		return grid;
 	}
 
 	public void setGrid(Grid grid) {
