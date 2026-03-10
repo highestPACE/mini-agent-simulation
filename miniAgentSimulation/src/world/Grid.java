@@ -1,12 +1,14 @@
 package world;
 import elements.*;
 import java.util.Random;
+import java.util.ArrayList;
 
 public class Grid {
 
 	private final int height;
 	private final int width;
 	private final Element[][] grid;
+	private ArrayList<Agent> agents = new ArrayList<Agent>();
 	
 	public Grid(int height, int width) {
 		this.height = height;
@@ -36,7 +38,8 @@ public class Grid {
 				continue;
 			}
 			if (a < agentsCount) {
-				new Agent(this, pos);
+				Agent agent = new Agent(this, pos);
+				agents.add(agent);
 				++a;
 			} else {
 				setElement(pos, new Obstacle());
