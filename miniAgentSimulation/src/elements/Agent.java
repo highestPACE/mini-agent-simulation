@@ -35,7 +35,9 @@ public class Agent extends Element {
 	}
 
 	public void setPosition(Position position) {
-		grid.setElement(this.position, new Empty());
+		if (this.position != null) {
+			grid.setElement(this.position, new Empty());
+		}
 		this.position = position;
 		grid.setElement(this.position, this);
 	}
